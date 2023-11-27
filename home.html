@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KREPMS</title>
+    <!--Css style link-->
+    <link rel="stylesheet" type="text/css" href="/Web Development/KREPM/css/style.css">
+    <!--link for icons styles-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/Web Development/KREPM/images/logo.png" alt="KREPM">
+            </div>
+            <ul>
+                <li><a href="home.html"><i class="uil uil-estate"></i>Home </a></li>
+                <li><a href="properties.html"><i class="uil uil-building"></i>Properties </a></li>
+                <li><a href="#">Buy <i class="uil uil-angle-down"></i></a>
+                    <ul>
+                        <li><a href="#">Flats</a></li>
+                        <li><a href="#">Mansion</a></li>
+                        <li><a href="#">Apartment</a></li>
+                        <li><a href="#">Bungalow</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sell <i class="uil uil-angle-down"></i></a>
+                    <ul>
+                        <li><a href="#">Post property</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Rent <i class="uil uil-angle-down"></i></a>
+                    <ul>
+                        <li><a href="#">Flats</a></li>
+                        <li><a href="#">Houses</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Help <i class="uil uil-angle-down"></i></a>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">Account <i class="uil uil-angle-down"></i></a>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="welcome-message">
+            <h1>Kitale Real Estate and Property Management</h1>
+            <p>Discover Your Dream Home: <br>Where Every Door Opens to Possibilities.<br> Find Comfort, Style, and the Perfect Space that Feels Just Like Home.</p>
+        </div>
+        
+        <div class="home">
+            <section class="right">
+                <form action="search.html" method="post">
+                    <h3>Find Your Dream Home</h3>
+                    <div class="box">
+                        <p>Enter Location<span>*</span></p>
+                        <input type="text" name="location" required maxlength="50" placeholder="Enter city name" class="input">
+                    </div>
+                    <div class="flex">
+                        <div class="box">
+                            <p>Property Type<span>*</span></p>
+                                <select name="property-type" required class="input">
+                                    <option value="">Mansion</option>
+                                    <option value="flat">Flat</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="bungalow">Bungalow</option>
+                                    </select>
+                        </div>
+                        <div class="box">
+                            <p>Bedrooms<span>*</span></p>
+                                <select name="maximum" required class="input">
+                                    <option value="1"> 1 Bedroom</option>
+                                    <option value="2"> 2 Bedroom</option>
+                                    <option value="3"> 3 Bedroom</option>
+                                    <option value="4"> 4 Bedroom</option>
+                                    <option value="5"> 5 Bedroom</option>
+                                    <option value="6"> 6 Bedroom</option>
+                                    </select>
+                        <div class="box">
+                            <p>Maximum Budget<span>*</span></p>
+                                <select name="maximum" required class="input">
+                                    <option value="1000000"> 1000000 ksh</option>
+                                    <option value="2000000"> 2000000 ksh</option>
+                                    <option value="3000000"> 3000000 ksh</option>
+                                    <option value="4000000"> 4000000 ksh</option>
+                                    <option value="5000000"> 5000000 ksh</option>
+                                    <option value="6000000"> 6000000 ksh</option>
+                                    <option value="7000000"> 7000000 ksh</option>
+                                    <option value="8000000"> 8000000 ksh</option>
+                                    <option value="9000000"> 9000000 ksh</option>
+                                    </select>
+                        </div>
+                        <div class="box">
+                            <p>Minimum Budget<span>*</span></p>
+                                <select name="minimum" required class="input">
+                                    <option value="500000"> 500000 ksh</option>
+                                    <option value="1500000"> 1500000 ksh</option>
+                                    <option value="2500000"> 2500000 ksh</option>
+                                    <option value="3500000"> 3500000 ksh</option>
+                                    <option value="4500000"> 4500000 ksh</option>
+                                    <option value="5500000"> 5500000 ksh</option>
+                                    <option value="6500000"> 6500000 ksh</option>
+                                    <option value="7500000"> 7500000 ksh</option>
+                                    <option value="8500000"> 8500000 ksh</option>
+                                    </select>
+                        </div>
+                        <input type="submit" name="search" value="Search Property" class="btn">
+                </form>
+            </section>
+            
+        </div>
+            
+
+    </main>
+    
+    <!-- Add your footer content here -->
+    <footer>
+        <ul class="footer-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="#">All Listings</a></li>
+        </ul>
+        <p>&copy; 2022 Kitale Real Estate & Property Management. All rights reserved.</p>
+    </footer>
+    <script src="/Web Development/KREPM/js/main.js"></script>
+</body>
+</html>
+
+
+
+

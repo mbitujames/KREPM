@@ -1,0 +1,192 @@
+/*Main style for home page*/
+
+/*Css for the header, main and footer*/
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+    background: url("/Web Development/KREPM/images/realestate5.jpg");
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+html, body {
+    min-height: 100%;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    /* Header styles */
+    header {
+        position: sticky;
+        top: 0; left: 0; right: 0;
+        background-color: #9C9990;
+        color: white;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+    
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        position: relative;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 18px; /* Adjust the font size as needed */
+        font-weight: bold; /* Make the text bold */
+    }
+
+    nav ul li ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #9C9990;
+        display: none;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    nav ul li ul li {
+        width: 200px;
+    }
+
+    /* Main content styles */
+    main {
+        padding: 20px;
+    }
+
+    /* Footer styles */   
+    footer {
+        background-color: #9C9990;
+        position: relative;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 16px; /* Adjust the font size as needed */
+        font-weight: bold; /* Make the text bold */
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        margin: 0 18px;
+        font-size: 16px; /* Adjust the font size as needed */
+        font-weight: bold; /* Make the text bold */
+    }
+    .welcome-message {
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    .welcome-message h1 {
+        text-align: center;
+        font-size: 36px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .welcome-message p {
+        font-size: 25px;
+        color:black;
+        margin-bottom: 30px;
+        text-decoration: solid;
+    }
+
+    
+    /* css style for the search bar*/
+    .home {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        height: 100vh;
+        /*background-color: #88D3CE;*/
+    }
+    
+    .home .right {
+        background-color: #B3B5BB;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .home .right h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .home .right .box {
+        margin-bottom: 20px;
+    }
+    
+    .home .right .box p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .home .right .box input,
+    .home .right .box select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    .home .right .box .input {
+        height: 40px;
+    }
+    
+    .home .right .box .btn {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .home .right .box .btn:hover {
+        background-color: #0056b3;
+    }
+         
+
+/* media queries */
