@@ -4,17 +4,52 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Us</title>
-        <link rel="stylesheet" type="text/css" href="/Web Development/KREPM/css/style1.css">
+        <link rel="stylesheet" type="text/css" href="./css/style1.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="./css/style2.css"><style>
+        /* Adding CSS to ensure uniform image sizes */
+        .property-card img {
+            width: 300px; /* Set a fixed width */
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image covers the area without stretching */
+        }
+
+        /* Additional styles for presentation */
+        .property-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .property-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .property-info {
+            margin-top: 10px;
+        }
+        .buy-link{
+            background-color: rgb(27, 238, 27);
+            padding: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .buy-link:hover{
+            background-color: green;
+        }
+    </style>
     </head>
+    
     <body>
         <header>
             <nav>
                 <div class="logo">
-                    <img src="/Web Development/KREPM/images/logo.png" alt="KREPM">
+                    <img src="./images/logo.png" alt="KREPM">
                 </div>
                 <ul>
-                    <li><a href="home.html"><i class="uil uil-estate"></i>Home </a></li>
+                    <li><a href="index.html"><i class="uil uil-estate"></i>Home </a></li>
                     <li><a href="properties.html"><i class="uil uil-building"></i>Properties </a></li>
                     <li><a href="#">Buy <i class="uil uil-angle-down"></i></a>
                         <ul>
@@ -54,33 +89,42 @@
                 
             </nav>
         </header>
-        <h1>List of Properties</h1>
+        <h1 style="text-align: center;">List of Properties</h1>
+
+            <div class="property-list">
+                <div class="property-card">
+                    <img src="https://source.unsplash.com/featured/?house" alt="Property 1 Image">
+                    <div class="property-info">
+                        <h2>Cozy Suburban Home</h2>
+                        <p>A charming 3-bedroom home in a quiet neighborhood. Features a spacious garden, modern kitchen, and a sun-filled living room.</p>
+                    <a href="buy.html" class="buy-link">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <img src="https://source.unsplash.com/featured/?apartment" alt="Property 2 Image">
+                    <div class="property-info">
+                        <h2>Modern City Apartment</h2>
+                        <p>Luxurious 2-bedroom apartment in the city center with stunning skyline views, high-end finishes, and a fully equipped gym.</p>
+                    <a href="buy.html" class="buy-link">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://source.unsplash.com/featured/?mansion" alt="Property 3 Image">
+                    <div class="property-info">
+                        <h2>Elegant Country Mansion</h2>
+                        <p>This expansive estate boasts 5 bedrooms, a private vineyard, a large outdoor pool, and exquisite antique furnishings.</p>
+                    <a href="buy.html" class="buy-link">Buy Now</a>
+                    </div>
+                </div>
+            </div>
         
-        <div class="property-list">
-            <div class="property">
-                <h2>Property 1</h2>
-                <p>Description of Property 1</p>
-            </div>
-            
-            <div class="property">
-                <h2>Property 2</h2>
-                <p>Description of Property 2</p>
-            </div>
-            
-            <div class="property">
-                <h2>Property 3</h2>
-                <p>Description of Property 3</p>
-            </div>
-            
-            <!-- Add more properties here -->
-            
-        </div>
         
         <footer>
-            <!-- Add your footer content here -->
             <footer>
                 <ul class="footer-links">
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
                     <li><a href="#">All Listings</a></li>

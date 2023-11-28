@@ -1,0 +1,35 @@
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.property-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    width: calc(25% - 20px); /* Adjusts width for 4 items per row, accounting for margin */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+}
+
+.property-info {
+    padding: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .property-card {
+        width: calc(50% - 20px); /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .property-list {
+        flex-direction:
