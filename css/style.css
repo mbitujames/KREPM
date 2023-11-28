@@ -187,6 +187,49 @@ body, ul {
     .home .right .box .btn:hover {
         background-color: #0056b3;
     }
-         
-
+    /* CSS styles for sign up and sign in the page */
+    .form-container form{ 
+        width: 50rem;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: #3C3C3C;
+      }
+      
+      .form-container form h2 {
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+        color: black;
+        text-transform: capitalize;
+        text-align: center;
+      }
+      .form-container form .box{
+        border: tan;
+        width: 100%; 
+        padding: 1.4rem;
+        color: black;
+        font-size: 1.8rem;
+        margin: 1rem 0;
+      }
+      .form-container form p{
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        color: black;
+      }
+      .form-container form p a{
+        color: blue;
+      }
+      .form-container form p a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    button {
+        font-size: 1.2rem;
+        padding: 1rem;
+        width: 100%;
+        border: none;
+        background-color: #5683e3;
+        color: white;
+    }
 /* media queries */
